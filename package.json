@@ -4,7 +4,9 @@
   "description": "Application pour annoter des résumés de la médécine factuelle",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "Annotation",
@@ -19,6 +21,8 @@
     "express": "^4.14.0",
     "jwt-simple": "^0.5.1",
     "moment": "^2.17.1",
-    "mongoose": "^4.7.1"
-  }
+    "mongoose": "^4.7.1",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
